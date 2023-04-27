@@ -1,6 +1,6 @@
 #include <iostream>
 #include <ctime>
-#include "Aircraft.h"
+#include "AirCraft.h"
 using namespace std;
 
 AirCraft::AirCraft(){

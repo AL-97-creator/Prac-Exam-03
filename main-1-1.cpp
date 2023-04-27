@@ -1,5 +1,5 @@
 #include <iostream>
-#include "Aircraft.h"
+#include "AirCraft.h"
 
 int main(){
     AirCraft a;

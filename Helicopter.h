@@ -2,7 +2,7 @@
 #define HELI_H
 #include <iostream>
 #include <ctime>
-#include "Aircraft.h"
+#include "AirCraft.h"
 using namespace std;
 
 class Helicopter: public AirCraft{
