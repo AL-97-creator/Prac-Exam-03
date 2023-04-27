@@ -13,8 +13,6 @@ Airplane();
 Airplane(int weight, int numPassengers);
 void reducePassengers(int x);
 int get_numPassengers();
-int get_weight();
-void set_weight(int weight);
 void fly(int headwind, int minutes);
 void print();
 };
