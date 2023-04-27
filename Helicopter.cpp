@@ -27,26 +27,38 @@ Helicopter::Helicopter(int weight, string name) {
             if(AirCraft::get_weight()>5760){
                 if(headwind>=40){
                     float x=AirCraft::get_fuel() - (0.4*minutes) - (0.01*minutes*(AirCraft::get_weight()-5760));
+                    if (x<20){
+                        0;
+                    } else {
                     AirCraft::set_fuel(x);
                     int z=AirCraft::get_numberOfFlights()+1;
-                    AirCraft::set_numberOfFlights(z);
+                    AirCraft::set_numberOfFlights(z);}
                 }else{
                     float x=AirCraft::get_fuel() - (0.2*minutes) - (0.01*minutes*(AirCraft::get_weight()-5760));
+                    if (x<20){
+                        0;
+                    } else {
                     AirCraft::set_fuel(x);
                     int z=AirCraft::get_numberOfFlights()+1;
-                    AirCraft::set_numberOfFlights(z);
+                    AirCraft::set_numberOfFlights(z);}
                 }
             } else {
                 if(headwind>=40){
                     float x=AirCraft::get_fuel() - (0.4*minutes);
+                    if (x<20){
+                        0;
+                    } else {
                     AirCraft::set_fuel(x);
                     int z=AirCraft::get_numberOfFlights()+1;
-                    AirCraft::set_numberOfFlights(z);
+                    AirCraft::set_numberOfFlights(z);}
                 }else{
                     float x=AirCraft::get_fuel() - (0.2*minutes);
+                   if (x<20){
+                        0;
+                    } else {
                     AirCraft::set_fuel(x);
                     int z=AirCraft::get_numberOfFlights()+1;
-                    AirCraft::set_numberOfFlights(z);
+                    AirCraft::set_numberOfFlights(z);}
                 }
             }
         } else {
