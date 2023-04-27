@@ -6,12 +6,9 @@
 using namespace std;
 
 class AirCraft{
-private:
+public:
 int weight;
 float fuel;
-
-
-public:
 int numberOfFlights;
 int headwind;
 int minutes;
@@ -25,7 +22,7 @@ void set_fuel(float fuel);
 float get_fuel();
 void set_numberOfFlights(int numberOfFlights);
 int get_numberOfFlights();
-void print();};
+virtual void print();};
 
 
 #endif
