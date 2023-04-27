@@ -26,12 +26,12 @@ Helicopter::Helicopter(int weight, string name) {
         if (AirCraft::get_fuel()>=20){
             if(AirCraft::get_weight()>5760){
                 if(headwind>=40){
-                    float x=AirCraft::get_fuel() - (0.4*minutes) - (0.01*(AirCraft::get_weight()-5760));
+                    float x=AirCraft::get_fuel() - (0.4*minutes) - (0.01*minutes*(AirCraft::get_weight()-5760));
                     AirCraft::set_fuel(x);
                     int z=AirCraft::get_numberOfFlights()+1;
                     AirCraft::set_numberOfFlights(z);
                 }else{
-                    float x=AirCraft::get_fuel() - (0.2*minutes) - (0.01*(AirCraft::get_weight()-5760));
+                    float x=AirCraft::get_fuel() - (0.2*minutes) - (0.01*minutes*(AirCraft::get_weight()-5760));
                     AirCraft::set_fuel(x);
                     int z=AirCraft::get_numberOfFlights()+1;
                     AirCraft::set_numberOfFlights(z);

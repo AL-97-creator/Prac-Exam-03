@@ -1,11 +1,11 @@
-#ifndef HELI_H
-#define HELI_H
+#ifndef AIRP_H
+#define AIRP_H
 #include <iostream>
 #include <ctime>
 #include "AirCraft.h"
 using namespace std;
 
-class Helicopter: public AirCraft{
+class Airplane: public AirCraft{
 public:
 int weight;
 string name;
