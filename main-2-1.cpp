@@ -3,7 +3,8 @@
 #include "Helicopter.h"
 
 int main(){
-    Helicopter a(6000,"Bob");
-    a.fly(20,20);
+    Helicopter a(4000,"Bob");
+    a.set_fuel(41.5);
+    a.fly(0,45);
     a.print();
 }
