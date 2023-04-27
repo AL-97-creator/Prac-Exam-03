@@ -34,7 +34,7 @@ Airplane::Airplane(int weight, int numPassengers) {
     void Airplane::fly(int headwind, int minutes){
         if (AirCraft::get_fuel()>=20){
                 if(headwind>=60){
-                    float x=AirCraft::get_fuel() - (0.5*minutes) - (0.01*minutes*(Airplane::get_numPassengers()));
+                    float x=AirCraft::get_fuel() - (0.5*minutes) - (0.001*minutes*(Airplane::get_numPassengers()));
                     if (x<20){
                         0;
                     }else{
