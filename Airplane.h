@@ -12,6 +12,8 @@ string name;
 Helicopter();
 Helicopter(int weight, string name);
 string get_name();
+int get_weight();
+void set_weight(int weight);
 void fly(int headwind, int minutes);
 void print();
 };
