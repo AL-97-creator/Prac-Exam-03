@@ -11,7 +11,7 @@ int weight;
 int numPassengers;
 Airplane();
 Airplane(int weight, int numPassengers);
-void reduce_passengers(int x);
+void reducePassengers(int x);
 int get_numPassengers();
 int get_weight();
 void set_weight(int weight);

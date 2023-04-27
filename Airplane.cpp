@@ -22,7 +22,7 @@ Airplane::Airplane(int weight, int numPassengers) {
     int Airplane::get_numPassengers(){
         return numPassengers;
     }
-    void Airplane::reduce_passengers(int x){
+    void Airplane::reducePassengers(int x){
         int z=Airplane::get_numPassengers()-x;
         if (z>=0){
             this->numPassengers=z;
