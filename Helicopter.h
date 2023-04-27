@@ -8,9 +8,10 @@ using namespace std;
 class Helicopter: public AirCraft{
 public:
 int weight;
-string n;
+string name;
 Helicopter();
-Helicopter(int weight, string n);
+Helicopter(int weight, string name);
+string get_name();
 int get_weight();
 void set_weight(int weight);
 void fly(int headwind, int minutes);

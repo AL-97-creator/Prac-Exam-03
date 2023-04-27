@@ -6,17 +6,22 @@ using namespace std;
 
 Helicopter::Helicopter(){
     weight=0;
-    n="none";
+    name="none";
     fuel=0;
     numberOfFlights=0;
 }
-Helicopter::Helicopter(int weight, string n) {
+Helicopter::Helicopter(int weight, string name) {
     this->weight=weight;
     AirCraft::set_weight(weight);
-    this->n=n;
+    this->name=name;
     fuel=100;
     numberOfFlights=0;
 }
+
+
+    string Helicopter::get_name(){
+        return name;
+    }
     void Helicopter::fly(int headwind, int minutes){
         if (AirCraft::get_fuel()>=20){
             if(AirCraft::get_weight()>5760){
@@ -52,4 +57,6 @@ Helicopter::Helicopter(int weight, string n) {
         std::cout<< "fuel = " << AirCraft::get_fuel() << std::endl;
         std::cout<< "no. of flights = " << AirCraft::get_numberOfFlights() << std::endl;
         std::cout<< "weight = "<<AirCraft::get_weight()<<std::endl;
+        std::cout<< "name = "<<Helicopter::get_name()<<std::endl;
+
     };
